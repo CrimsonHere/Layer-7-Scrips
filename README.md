@@ -10,3 +10,5 @@ Ps if you gonna work on a project like this don't be like the guy who sits and d
 Also Dennis try to talk shit or deny any of this and I will release the masive amount of ss of our dms and the whole root dir of your deleted server.
 
 Also here is his leaked verson https://github.com/pcgay/layer7Methods same as what I have here. This is his main github https://github.com/MasterMod22 for anyone wanting more chat gbt code.
+
+Ohh also nice cashapp ![image](https://github.com/CrimsonHere/Layer-7-Scrips/assets/96927046/7a686cef-5342-4ee6-b271-55b425e64bbe) ![image](https://github.com/CrimsonHere/Layer-7-Scrips/assets/96927046/d00d5593-023e-41f6-856e-3c959d27ce74)
