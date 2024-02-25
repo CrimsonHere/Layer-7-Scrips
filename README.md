@@ -8,3 +8,5 @@ Now after he decided that he wants to blame everything on me here is the old sou
 Ps if you gonna work on a project like this don't be like the guy who sits and does nothing but complains when over 200hr of work goes unpaid.
 
 Also Dennis try to talk shit or deny any of this and I will release the masive amount of ss of our dms and the whole root dir of your deleted server.
+
+Also here is his leaked verson https://github.com/pcgay/layer7Methods same as what I have here. This is his main github https://github.com/MasterMod22 for anyone wanting more chat gbt code.
