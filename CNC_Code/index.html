@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layer7 - DSTAT</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+      }
+
+      body > div {
+        width: 100%;
+      }
+
+      #chart {
+        width: 80%;
+        margin: auto;
+      }
+
+      #info {
+        margin-top: 2em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="info"></h2>
+      <div id="chart"></div>
+    </div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script>
+      window.onload = () => 
+      {
+        let info = document.getElementById("info");
+        let chart = Highcharts.chart("chart", 
+        {
+          exporting: 
+          {
+            enabled: true
+          },
+          chart:
+          {
+            type: "area"
+          },
+          title: 
+          {
+            text: "Layer7 DSTAT"
+          },
+          xAxis: 
+          {
+            type: "datetime"
+          },
+          yAxis: 
+          {
+            title: 
+            {
+              text: "",
+            }
+          },
+          series: 
+          [
+            {
+              name: "Requests",
+              data: [],
+            }
+          ]
+        });
+        info.innerText = "Capturing requests from " + location.host + "/dstat";
+        async function UpdateChart() 
+        {
+          const requestcount = await fetch('/api/request-count').then(response => response.json());
+          const time = new Date().getTime();
+          chart.series[0].addPoint([time, requestcount.count], true, chart.series[0].points.length > 60);
+        }
+        UpdateChart();
+        setInterval(UpdateChart, 2000);
+      };
+    </script>
+  </body>
+</html>

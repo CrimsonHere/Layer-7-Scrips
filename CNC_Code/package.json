@@ -1,0 +1,23 @@
+{
+  "name": "layer7-dstat",
+  "version": "1.0.0",
+  "description": "A simple layer7 dstat on the web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Filippo Finke",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "request-ip": "^3.3.0",
+    "tls": "^0.0.1",
+    "ws": "^7.5.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filippofinke/layer7-dstat.git"
+  }
+}
